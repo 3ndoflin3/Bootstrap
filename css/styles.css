@@ -1,0 +1,97 @@
+/*
+nustro fichero css
+
+@author: kiryl
+
+
+*/
+
+h1, h2, h3, h4, h5 ,h6, p {
+    text-transform: capitalize;
+    color: teal;
+}
+
+h1{
+    color: teal;
+
+}
+
+footer{
+    right: 5em;;
+    bottom: 5em;
+}
+
+footer a{
+    color:teal;
+    background-color: yellow;
+}
+
+footer a:hover{
+    color:#fd7e14;
+}
+
+footer ul{
+    list-style: none;
+}
+
+
+
+main::before{
+    content: "Mobile First < 576px";
+    color: teal;
+}
+
+.col, .col-sm{
+    border: 1px solid blue;
+    background-color: springgreen;
+    padding: 20px;
+}
+
+
+/*****************************************************BUTTONS************************************************************************************/
+
+
+
+.btn-secondary{
+    margin-top:4vh;
+    margin-left: 3vw;
+}
+
+
+
+/*****************************************************MEDIA-QUERIES************************************************************************************/
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    
+    main::before{
+        content: "Small device 576px";
+    }
+
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    
+    main::before{
+        content: "Medium device 768px";
+    }
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    
+    main::before{
+        content: "Large device 992px";
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    
+    main::before{
+        content: "Extra large device 1200px";
+    }
+ }
