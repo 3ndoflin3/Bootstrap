@@ -7,3 +7,4 @@ Tenemos varias paginas .html donde probamos diferentes funcionalidades de este f
 - Utilidades
 - Themes
 
+![Alt text](https://github.com/3ndoflin3/Bootstrap/blob/master/myPage.png)
