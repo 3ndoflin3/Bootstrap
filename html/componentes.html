@@ -15,67 +15,88 @@
   <body background="https://wallpaperaccess.com/full/329351.jpg">
 
     <a type="button" class="btn btn-secondary" href="/index.html">Volver</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+
+              <li class="nav-item">
+                  <a class="nav-link" href="/index.html">Inicio <span class="sr-only">(current)</span></a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" href="/html/GridSystem.html">GridSystem</a>
+              </li>
+
+              <li class="nav-item">
+                      <a class="nav-link" href="/html/Utilidades.html">Utilidades</a>
+              </li>
+
+              </li>
+
+              <li class="nav-item active">
+                      <a class="nav-link" href="/html/componentes.html">Componentes</a>
+              </li>
+
+          </ul>
+
+          <form class="form-inline my-2 my-lg-0">
+
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+
+          </form>
+      </div>
+      
+      </nav>
+
+
+    
     <main class= "container">
     
-            <h2>Componentes</h2>
-
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-        
-                            <li class="nav-item">
-                                <a class="nav-link" href="/index.html">Inicio <span class="sr-only">(current)</span></a>
-                            </li>
-        
-                            <li class="nav-item">
-                                <a class="nav-link" href="/html/GridSystem.html">GridSystem</a>
-                            </li>
-        
-                            <li class="nav-item">
-                                    <a class="nav-link" href="/html/Utilidades.html">Utilidades</a>
-                            </li>
-        
-                            </li>
-        
-                            <li class="nav-item active">
-                                    <a class="nav-link" href="/html/componentes.html">Componentes</a>
-                            </li>
-        
-                        </ul>
-        
-                        <form class="form-inline my-2 my-lg-0">
-        
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        
-                        </form>
-                    </div>
-                    
-                    </nav>
-
-            <!--El role a nivel de presentacion no hace nada pero define el rol de la etiqueta a nivel de accesibilidad-->
-            <div class="alert alert-primary" role="alert">
-                    Esto es una alerta de color azul
+            
+            <div class="row mb-3">
+                <div class="col">
+                    <h1>Componentes</h1>
+                    <p>Floats</p>                  
+                </div>
             </div>
+            
     
-            <div class="alert alert-danger" role="alert">
-                    Esto es una alerta de color rojo
+       <!--El role a nivel de presentacion no hace nada pero define el rol de la etiqueta a nivel de accesibilidad-->
+          <div class="alert alert-primary" role="alert">
+              Esto es una alerta de color azul
+          </div>
+
+          <div class="alert alert-danger" role="alert">
+                  Esto es una alerta de color rojo
+          </div>
+
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+          </div>
+
+          <p>Streched Link</p>
+
+          <div class="card" style="width: 18rem;">
+              <img src="https://i.ytimg.com/vi/Hgqsjdu7Ydc/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCsXgiRtsFgeLBQ4jxA-FycXPXCuQ" class="card-img-top" alt="No se ha podido cargar la imagen">
+              <div class="card-body">
+                <h5 class="card-title">Card with stretched link</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://youtu.be/Hgqsjdu7Ydc" class="btn btn-primary stretched-link">Go somewhere</a>
+              </div>
             </div>
-    
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-            </div>
-    
+
+
        
     </main>
 

@@ -12,91 +12,178 @@
     
     <title>Bootstrap4</title>
   </head>
-  <body background="https://wallpaperaccess.com/full/329351.jpg">
+  <body background="https://wallpaperaccess.com/full/329351.jpg" >
 
     <a type="button" class="btn btn-secondary" href="/index.html">Volver</a>
 
-    <main class= "container">
-    
-        <h1>grid system</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
+       <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-    
+
                         <li class="nav-item">
                             <a class="nav-link" href="/index.html">Inicio <span class="sr-only">(current)</span></a>
                         </li>
-    
+
                         <li class="nav-item active">
                             <a class="nav-link" href="/html/GridSystem.html">GridSystem</a>
                         </li>
-    
+
                         <li class="nav-item">
                                 <a class="nav-link" href="/html/Utilidades.html">Utilidades</a>
                         </li>
-    
+
                         </li>
-    
+
                         <li class="nav-item">
                                 <a class="nav-link" href="/html/componentes.html">Componentes</a>
                         </li>
-    
+
                     </ul>
-    
+
                     <form class="form-inline my-2 my-lg-0">
-    
+
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    
+
                     </form>
-                </div>
-                
-                </nav>
+                </div> <!--Collapse navbar-->
+        </div><!--Container-->
+            
+        </nav>
 
-            <p>Dividimos las filas en 3 columnas para todos los breakpoints</p>
 
-            <div class="row p-2">
-                
 
-                <div class="col">
-                    One of three columns
-                </div>
-                <div class="col">
-                    One of three columns
-                </div>
-                <div class="col">
-                    One of three columns
-                </div>
+
+    <main class= "container">
+    
+        <div class="row mb-3">
+            <div class="col">
+                    <h1>grid system</h1>
+                    <p>Bootstrap funciona con un sistema de grillas a 12 columnas</p>
+                    <p>Usa internamente <b>flexbox</b> y es necesario que este dentro de un <code>.container</code></p>            
+            </div>
+        </div>
+
+        <p>Disponemos de 12 columnas y 5 breakpoints</p>
+
+        <div class="row mb-5">
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+        </div>
+
+
+
+        <p>Dividimos las filas en 3 columnas para todos los breakpoints</p>
+
+        <div class="row p-2">
+            
+
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+
+
+
+        <p>Dividimos las filas en 3 columnas a partir del breakpoint sm</p>
+        <p>Inferior a SM la columna ocupa 12 columnas</p>
+    
+
+        <!-- p-2 aplica 2 de padding-->        
+        <div class="row p-2">
+            
+            <!---->
+
+            <div class="col-sm">
+                <span class ="d-none d-sm-block">4</span>
+                <span class ="d-block d-sm-none">12</span>
             </div>
 
+            <div class="col-sm">
+                <span class ="d-none d-sm-block">4</span>
+                <span class ="d-block d-sm-none">12</span>
+            </div>
 
+            <div class="col-sm">
+                <span class ="d-none d-sm-block">4</span>
+                <span class ="d-block d-sm-none">12</span>
+            </div>
 
-            <p>Dividimos las filas en 3 columnas a partir del breakpoint sm</p>
-            <p>Inferior a SM la columna ocupa 12 columnas</p>
+        </div>
+
+        <p>Disponemos de 5 breakpoints y tambien se pueden indicar las columnas que ocupan</p>
+
+        <div class="row" style="color: white">
+            <div class="col-xs-12 col-sm-4 col-lg-6">1º columna</div>
+            <div class="col-xs-12 col-sm-4 col-lg-6">2º columna</div>
+            <div class="col-xs-12 col-sm-4 col-lg-6">3º columna</div>
+        </div>
+
+        <h2>Vertical Alignment</h2>
+        <p>Ponemos al <code>div .row</code> un estilo en linea <code>style = "min-height: 10rem"</code> para darle altura</p>
+
+        <table style="height: 100px;">
+            <tbody>
+              <tr>
+                <td class="align-baseline">baseline</td>
+                <td class="align-top">top</td>
+                <td class="align-middle">middle</td>
+                <td class="align-bottom">bottom</td>
+                <td class="align-text-top">text-top</td>
+                <td class="align-text-bottom">text-bottom</td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
         
+        <p>Tenemos 6 divs en 2 columnas para Pcs, pero en movil queremos que la 5º sea la 1º</p>
 
-            <!-- p-2 aplica 2 de padding-->        
-            <div class="row p-2">
-                
+        <div class="row">
+            <div class="col">1º columna</div>
+            <div class="col">2º columna</div>
+            <div class="col">3º columna</div>
+            <div class="col">4º columna</div>
+            <div class="col order-first order-sm-3">5º columna</div>
+            <div class="col order-sm-4">6º columna</div>
+        </div>
 
-                <div class="col-sm">
-                    One of three columns
-                </div>
-                <div class="col-sm">
-                    One of three columns
-                </div>
-                <div class="col-sm">
-                    One of three columns
-                </div>
-            </div>
+        <br>
 
+
+        <h2>Offset</h2>
+        <p>Queremos 3 columnas que ocupen 3 espacios pero de la 2º a la 3º debe quedar un hueco</p>
+
+        <div class="row">
+            <div class="col-md-3">1º columna</div>
+            <div class="col-md-3">2º columna</div>
+            <div class="col-md-3 offset-md-3">3º columna</div>
+        </div><br>
+
+
+        
 
     </main>
 

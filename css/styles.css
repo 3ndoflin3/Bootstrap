@@ -40,10 +40,20 @@ main::before{
     content: "Mobile First < 576px";
     color: teal;
 }
+div[class^="float"]{
+    color:white;
+    background-color: red;
+   
+}
 
-.col, .col-sm{
+td[class^="align"]{
+    color:white;
+    background-color: purple;
+}
+
+.row div[class^="col"]{
     border: 1px solid blue;
-    background-color: springgreen;
+    background-color: #1fa6E4;
     padding: 20px;
 }
 
